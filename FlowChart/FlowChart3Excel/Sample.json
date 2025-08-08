@@ -1,0 +1,33 @@
+[
+  {
+    "Id": "Start",
+    "Text": "Start",
+    "Type": "start",
+    "Next": [ "Step1" ]
+  },
+  {
+    "Id": "Step1",
+    "Text": "Load Data",
+    "Type": "process",
+    "Next": [ "Decision1" ]
+  },
+  {
+    "Id": "Decision1",
+    "Text": "Is Data Valid?",
+    "Type": "decision",
+    "Next": [ "Step2", "End" ]
+  },
+  {
+    "Id": "Step2",
+    "Text": "Save Data",
+    "Type": "process",
+    "Next": [ "End" ]
+  },
+  {
+    "Id": "End",
+    "Text": "End",
+    "Type": "end",
+    "Next": []
+  }
+]
+
